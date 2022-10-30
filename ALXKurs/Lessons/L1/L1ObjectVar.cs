@@ -4,7 +4,7 @@ namespace ALXKurs.Lessons.L1
 {
     public class L1ObjectVar
     {
-        public static void test1()
+        public static void Run()
         {
 
             Dog dog = new Dog();
@@ -19,7 +19,7 @@ namespace ALXKurs.Lessons.L1
             Dog.Eat();
         }
 
-        public static void test2()
+        public static void Run2()
         {
             Dog westieDog = new Dog();
             westieDog.Race = "kundelek1";

@@ -24,14 +24,14 @@ namespace ALXCalculator
                     if (z == 1) {
                         Console.WriteLine($"{x} + {y} = {Add(x, y)}");
                     }
-                    if (z == 2) {
+                    else if (z == 2) {
                         Console.WriteLine($"{x} * {y} = {Multiply(x, y)}");
                     }
-                    if (z == 3)
+                    else if (z == 3)
                     {
                         Console.WriteLine($"{x} - {y} = {Substract(x, y)}");
                     }
-                    if (z == 4)
+                    else
                     {
                         Console.WriteLine($"{x} / {y} = {Divide(x, y)}");
                     }

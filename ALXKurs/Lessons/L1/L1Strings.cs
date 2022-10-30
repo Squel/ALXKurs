@@ -8,7 +8,7 @@ namespace ALXKurs.Lessons.L1
 {
     public class L1Strings
     {
-        public static void test()
+        public static void Run()
         {
             string name = "Mateusz";
             name = "Ala";
