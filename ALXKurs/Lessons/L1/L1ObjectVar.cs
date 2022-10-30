@@ -1,12 +1,12 @@
-﻿using ALXKurs.Lessons.Classes;
+﻿using ALXKurs.Lessons.L1.Classes;
 
-namespace ALXKurs.Lessons
+namespace ALXKurs.Lessons.L1
 {
     public class L1ObjectVar
     {
         public static void test1()
         {
-             
+
             Dog dog = new Dog();
             dog.jump();
             dog.Bark();
@@ -35,7 +35,7 @@ namespace ALXKurs.Lessons
             Console.WriteLine(westieDog.Add(2, 3));
 
         }
-         public void writersomting()
+        public void writersomting()
         {
             Console.WriteLine("Something");
         }

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ALXKurs.Lessons
+namespace ALXKurs.Lessons.L1
 {
-     public class L1Strings
+    public class L1Strings
     {
         public static void test()
         {
@@ -22,10 +22,10 @@ namespace ALXKurs.Lessons
             ExpandString(name, "Something");
             Console.WriteLine(name);
 
-            
+
         }
 
-        public static void ExpandString (string word, string extension)
+        public static void ExpandString(string word, string extension)
         {
             word = word + extension;
         }

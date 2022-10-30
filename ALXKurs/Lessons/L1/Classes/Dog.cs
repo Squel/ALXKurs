@@ -1,6 +1,6 @@
 ﻿
 
-namespace ALXKurs.Lessons.Classes
+namespace ALXKurs.Lessons.L1.Classes
 {
     public class Dog
     {

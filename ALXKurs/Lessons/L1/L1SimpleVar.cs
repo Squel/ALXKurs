@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ALXKurs.Lessons
+namespace ALXKurs.Lessons.L1
 {
     public class L1SimpleVar
     {

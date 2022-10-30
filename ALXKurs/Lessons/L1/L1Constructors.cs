@@ -1,11 +1,11 @@
-﻿using ALXKurs.Lessons.Classes;
+﻿using ALXKurs.Lessons.L1.Classes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ALXKurs.Lessons
+namespace ALXKurs.Lessons.L1
 {
     public class L1Constructors
     {
@@ -16,7 +16,7 @@ namespace ALXKurs.Lessons
             spider.Species = "Black Widow";
             spider.IsVenomous = true;
             spider.Sex = "female";
-           
+
 
             var redspider = new Spider("red", "taratula", true, "male");
 
