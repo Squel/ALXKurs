@@ -26,6 +26,13 @@ namespace ALXKurs.Lessons.Classes
             Sex = "male";
 
         }
+
+        public Spider(string color, bool isVenomous)
+
+        {
+            Color=color;
+            IsVenomous = isVenomous;
+        }
         public Spider(string color, string species, bool isVenomous, string sex)
         {
             Color = color;

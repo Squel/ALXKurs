@@ -21,6 +21,8 @@ namespace ALXKurs.Lessons
             var redspider = new Spider("red", "taratula", true, "male");
 
             var bluespider = new Spider("blue", "Goliath");
+
+            var yellowSpider = new Spider("yellow", true);
         }
     }
 }
