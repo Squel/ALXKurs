@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,7 +15,7 @@ namespace ALXCourseHomework
             int a = 3;
             int b = 6;
             int c = 15;
-            double d =((a ^ b) / 2) % c;
+            double d = ((double)(a ^ b) / 2) % c;
             Console.WriteLine((a ^ b));
             Console.WriteLine("Wynik: " + d);
             Console.WriteLine( d = (d + 5));
