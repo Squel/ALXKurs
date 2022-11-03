@@ -37,7 +37,7 @@ namespace ALXCourseHomework
             em1.SendEmail(new() { EmailFrom = "tester@hotmail.com", EmailTo = "bb@o2.pl.pl", EmailSubject = "Lista zakupów", EmailMessage = "\n1. Chleb\n 2. Ser żółty\n 3. Ketchup\n 4. Kefri\n" });
             em1.SendEmail(new() { EmailFrom = "tester@o2.pl", EmailTo = "cc@gmail.com", EmailSubject = "Zawiadomienie", EmailMessage = "Niedopłata do mediów\n" });
 
-            
+             
             
 
 
