@@ -23,13 +23,15 @@ namespace ALXCourseHomework
             {
                 Console.WriteLine("Udzielono 15% rabatu");
                 z = (z * (1-0.15));
-                Console.WriteLine($"Kwota do zapłaty: {z}");
+                Double dz = Math.Round((Double)z, 2);
+                Console.WriteLine($"Kwota do zapłaty: {dz}");
             }
-            else if (z <=100 && z >= 60)
+            else if (z <=100 && z > 60)
             {
                 Console.WriteLine("Udzielono 5% rabatu");
-                z = (z * (1 - 0.05));
-                Console.WriteLine($"Kwota do zapłaty: {z}");
+                z = (z * (1-0.05));
+                Double cz = Math.Round((Double)z, 2);
+                Console.WriteLine($"Kwota do zapłaty: {cz}");
             }
             else
             {
