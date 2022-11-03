@@ -18,9 +18,13 @@ namespace ALXCourseHomework
       //  }
     public static void Run()
         {
-            Console.WriteLine(Days.TUESDAY);
-            Console.WriteLine(Month.NOVEMBER);
-            Console.WriteLine("2022");
+            
+            Console.Write(Days.THURSDAY+", ");
+            Console.Write(Month.NOVEMBER+", ");
+            Console.Write("2022");
+
+            
+            
         }
 
 

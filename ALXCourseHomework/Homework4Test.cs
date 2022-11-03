@@ -8,8 +8,7 @@ namespace ALXCourseHomework
 {
     public class Homework4Test
     {
-        public double x;
-        public double y;
+        
         public double z;
         public static void Run()
         {
