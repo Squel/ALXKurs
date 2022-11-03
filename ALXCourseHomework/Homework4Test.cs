@@ -19,13 +19,13 @@ namespace ALXCourseHomework
             var y = double.Parse(Console.ReadLine());
             var z = (x + y);
             Console.WriteLine($"Suma zakupionych towarów: {x + y}");
-            if (z >= 100)
+            if (z > 100)
             {
                 Console.WriteLine("Udzielono 15% rabatu");
                 z = (z * (1-0.15));
                 Console.WriteLine($"Kwota do zapłaty: {z}");
             }
-            else if (z <100 && z >= 60)
+            else if (z <=100 && z >= 60)
             {
                 Console.WriteLine("Udzielono 5% rabatu");
                 z = (z * (1 - 0.05));
