@@ -5,6 +5,7 @@ Console.WriteLine("ALX");
 Console.WriteLine("----------------------\n");
 //Homework1Test.Run();
 //Homework2Test.Run();
-Homework5Test.Run();
+//Homework5Test.Run();
+Homework3Test.Run();
 Console.WriteLine("\n");
 Console.WriteLine("----------------------\n");
