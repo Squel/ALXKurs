@@ -20,9 +20,24 @@ namespace ALXCourseHomework
             Console.WriteLine("Wynik: " + d);
             Console.WriteLine( d = (d + 5));
             Console.WriteLine("Czy wynik jest wiekszy od A "+ (d > a));
+        }
+    }
 
-
-
+    public class demorgan
+    {
+        public static void Run()
+        {
+            bool a = true;
+            bool b = false;
+            bool c = true;
+            if (!a || !b || !c)
+            {
+                Console.WriteLine("Wszystkie parametry muszą być spełnione");
+            }
+            if (!(a && b && c))
+            {
+                Console.WriteLine("Wszystkie parametry są spełnione");
+            }
 
         }
     }
