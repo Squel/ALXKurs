@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ALXCourseHomework
 {
-    internal class Homework5Test
+    public class Homework5Test
     {
         public double z;
         
@@ -30,7 +30,7 @@ namespace ALXCourseHomework
                     break;
                 case <= 100 and >60:
                     Console.WriteLine("Udzielono 5% rabatu");
-                    z = (z * (1 - 0.05));
+                    z = (z * (1-0.05));
                     Double cz = Math.Round((Double)z, 2);
                     Console.WriteLine($"Kwota do zapłaty: {cz}");
                     break;
