@@ -26,5 +26,7 @@ Console.WriteLine("----------------------");
 //L1Loops.RunFor();
 //L1Loops.RunWhile();
 //L1Loops.RunWhile2();
-L1ArraysAndLists.Run2();
+//L1ArraysAndLists.Run2();
+L1Dictionarys.Run1();
+
 Console.WriteLine("----------------------");

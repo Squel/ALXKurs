@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 
 namespace ALXKurs.Lessons.M2.L1
 {
-    public class User
+    public enum UserRoles
     {
-        public string Name { get; set; }
+        ADMINISTRATOR,
+        USER,
+        SUPERVISOR,
+        DATA_CONTRACTOR,
     }
 }
