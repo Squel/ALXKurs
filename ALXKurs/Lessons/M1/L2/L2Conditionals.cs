@@ -4,25 +4,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ALXKurs.Lessons.L2
+namespace ALXKurs.Lessons.M1.L2
 {
     public class L2Conditionals
     {
         public static void Run()
         {
             Console.Write("Podaj liczbę: ");
-            var number = Int32.Parse(Console.ReadLine());
+            var number = int.Parse(Console.ReadLine());
 
 
             Console.Write("Podaj limit dolny: ");
-            var limit1 = Int32.Parse(Console.ReadLine());
+            var limit1 = int.Parse(Console.ReadLine());
 
 
             Console.Write("Podaj limit górny: ");
-            var limit2 = Int32.Parse(Console.ReadLine());
+            var limit2 = int.Parse(Console.ReadLine());
             CheckBetwene(number, limit1, limit2);
         }
-         
+
         private static void CheckIfNumberIsEven(int number)
         {
             if (number % 2 == 0)

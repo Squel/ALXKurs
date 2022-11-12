@@ -1,6 +1,6 @@
-﻿using ALXKurs.Lessons.L1.Classes;
+﻿using ALXKurs.Lessons.M1.L1.Classes;
 
-namespace ALXKurs.Lessons.L1
+namespace ALXKurs.Lessons.M1.L1
 {
     public class L1ObjectVar
     {

@@ -1,11 +1,11 @@
-﻿using ALXKurs.Lessons.L1.Classes;
+﻿using ALXKurs.Lessons.M1.L1.Classes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ALXKurs.Lessons.L1
+namespace ALXKurs.Lessons.M1.L1
 {
     public class L1Constructors
     {

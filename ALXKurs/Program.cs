@@ -1,7 +1,8 @@
 ﻿
 using ALXKurs.Assignments;
+using ALXKurs.Assignments.M2;
 using ALXKurs.Lessons;
-using ALXKurs.Lessons.L2;
+using ALXKurs.Lessons.M1.L2;
 
 Console.WriteLine("ALX");
 Console.WriteLine("----------------------");
@@ -14,5 +15,6 @@ Console.WriteLine("----------------------");
 //AssignmentsDemo.Run();
 
 //L2Conditionals.Run();
-L2EnumsAndSwitch.Run();
+//L2EnumsAndSwitch.Run();
+SeniorityServiceTest.Run();
 Console.WriteLine("----------------------");

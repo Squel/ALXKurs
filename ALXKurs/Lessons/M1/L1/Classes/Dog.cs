@@ -1,6 +1,4 @@
-﻿
-
-namespace ALXKurs.Lessons.L1.Classes
+﻿namespace ALXKurs.Lessons.M1.L1.Classes
 {
     public class Dog
     {
@@ -24,14 +22,14 @@ namespace ALXKurs.Lessons.L1.Classes
             Console.WriteLine("Eat! Eat!");
         }
 
-        public int getOlderAge() 
+        public int getOlderAge()
         {
-            return Age + 1; 
+            return Age + 1;
         }
 
         public void GrowOlder(int numerOfYears)
         {
-            Age = Age+ numerOfYears;
+            Age = Age + numerOfYears;
         }
 
         public int Add(int x, int y)
@@ -52,7 +50,7 @@ namespace ALXKurs.Lessons.L1.Classes
             Console.WriteLine("Attetion here is dog " + Name);
             Console.WriteLine("Race: " + Race);
             Console.WriteLine("Age: " + Age);
-            Console.WriteLine("Is he a god boy: " + GoodBoy);       
+            Console.WriteLine("Is he a god boy: " + GoodBoy);
         }
     }
 

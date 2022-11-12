@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ALXKurs.Lessons.L1.Classes
+namespace ALXKurs.Lessons.M1.L1.Classes
 {
     public class Spider
     {
@@ -18,7 +18,7 @@ namespace ALXKurs.Lessons.L1.Classes
 
         }
 
-        public Spider( string color, string species)
+        public Spider(string color, string species)
         {
             Color = color;
             Species = species;
@@ -30,7 +30,7 @@ namespace ALXKurs.Lessons.L1.Classes
         public Spider(string color, bool isVenomous)
 
         {
-            Color=color;
+            Color = color;
             IsVenomous = isVenomous;
         }
         public Spider(string color, string species, bool isVenomous, string sex)

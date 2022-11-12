@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ALXKurs.Assignments.Classes
+namespace ALXKurs.Assignments.M1.Classes
 {
     public class Bus
     {

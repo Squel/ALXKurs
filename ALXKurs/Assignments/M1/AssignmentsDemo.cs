@@ -1,11 +1,11 @@
-﻿using ALXKurs.Assignments.Classes;
+﻿using ALXKurs.Assignments.M1.Classes;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ALXKurs.Assignments
+namespace ALXKurs.Assignments.M1
 {
     public class AssignmentsDemo
     {
@@ -33,6 +33,6 @@ namespace ALXKurs.Assignments
         }
 
 
-        
+
     }
 }
