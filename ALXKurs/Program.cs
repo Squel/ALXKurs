@@ -25,5 +25,6 @@ Console.WriteLine("----------------------");
 //L1Loops.RunForeach();
 //L1Loops.RunFor();
 //L1Loops.RunWhile();
-L1Loops.RunWhile2();
+//L1Loops.RunWhile2();
+L1ArraysAndLists.Run2();
 Console.WriteLine("----------------------");

@@ -9,10 +9,11 @@ namespace ALXCalculator
     public class Calculator
     {
         List<char> ValidChars;
+        
         public Calculator()
         {
             ValidChars = new List<char>();
-           ValidChars.Add('+');
+            ValidChars.Add('+');
             ValidChars.Add('-');
             ValidChars.Add('*');
             ValidChars.Add('/');
