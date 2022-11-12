@@ -63,6 +63,8 @@ namespace ALXKurs.Assignments.M2
         public void ClearLists()
         {
             JuniorEmployess.Clear();
+            midEmployess.Clear();
+            SeniorEmployee.Clear();
 
         }
     }

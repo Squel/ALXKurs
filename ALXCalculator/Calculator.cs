@@ -8,23 +8,42 @@ namespace ALXCalculator
 {
     public class Calculator
     {
+        List<char> ValidChars;
+        public Calculator()
+        {
+            ValidChars = new List<char>();
+           ValidChars.Add('+');
+            ValidChars.Add('-');
+            ValidChars.Add('*');
+            ValidChars.Add('/');
+        }
         public void Run()
         {
             Console.WriteLine("Running calculator.....");
-            Console.Write("Podaj pierwsza liczbe: ");
-            var x = double.Parse(Console.ReadLine());
-            Console.Write("Podaj druga liczbe: ");
-            var y = double.Parse(Console.ReadLine());
             Console.WriteLine("Wybierz operator: +, -, *, /");
             Console.Write("Podaj operację: \n");
-            var operationCharacter = Console.ReadKey();
-            Console.WriteLine(" ");
-            PerformOperation(operationCharacter.KeyChar, x, y);       
-                  
-                   
-                  
+            var operationCharacterInfo =  Console.ReadKey();
+           
+            while (ValidOperation(operationCharacterInfo.KeyChar))
+            {
+                
+                Console.WriteLine(" ");
+                Console.Write("Podaj pierwsza liczbe: ");
+                var x = double.Parse(Console.ReadLine());
+                Console.Write("Podaj druga liczbe: ");
+                var y = double.Parse(Console.ReadLine());
+                Console.Write("Podaj operację: \n");
+                PerformOperation(operationCharacterInfo.KeyChar, x, y);
+                Console.Write("Podaj operację: \n");
+                operationCharacterInfo = Console.ReadKey();
+            }
         }
 
+        private bool ValidOperation(char operationCharacter)
+        {
+            return ValidChars.Contains(operationCharacter);
+
+        }
         private void PerformOperation (char opertaionChar,double x, double y)
         {
             switch (opertaionChar)
