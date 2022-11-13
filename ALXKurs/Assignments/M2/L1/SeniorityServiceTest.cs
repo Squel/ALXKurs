@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ALXKurs.Assignments.M2
+namespace ALXKurs.Assignments.M2.L1
 {
     public static class SeniorityServiceTest
     {
@@ -31,7 +31,7 @@ namespace ALXKurs.Assignments.M2
 
             Console.WriteLine("Sklasyfikowani po zarobkach: ");
             Console.WriteLine("Juniors: ");
-            
+
 
 
             seniorityService.ClearLists();
@@ -44,25 +44,25 @@ namespace ALXKurs.Assignments.M2
 
             Console.WriteLine("\n\nSklasyfikowani po doświadczeniu: ");
             Console.WriteLine("Juniors: ");
-           
+
 
 
             Console.WriteLine("Juniors: ");
 
             Console.WriteLine("Mids: ");
-           
+
             Console.WriteLine("Seniors: ");
         }
         public static void PresentEmployee(List<Employee> employees)
         {
-            
-           
+
+
             foreach (Employee employee in employees)
             {
                 Console.WriteLine($"Employee: {employee.Name}");
-              
 
-               
+
+
             }
         }
     }

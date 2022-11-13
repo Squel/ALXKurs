@@ -1,12 +1,15 @@
 ﻿
 using ALXKurs.Assignments;
 using ALXKurs.Assignments.M2;
+using ALXKurs.Assignments.M2.L2;
 using ALXKurs.Lessons;
 using ALXKurs.Lessons.M1.L2;
 using ALXKurs.Lessons.M2.L1;
+using ALXKurs.Lessons.M2.L2;
 
 Console.WriteLine("ALX");
 Console.WriteLine("----------------------");
+Console.WriteLine("\n");
 //L1ObjectVar.Run2();
 //L1ObjectVar l1var = new L1ObjectVar();
 //l1var.writersomting();
@@ -27,6 +30,11 @@ Console.WriteLine("----------------------");
 //L1Loops.RunWhile();
 //L1Loops.RunWhile2();
 //L1ArraysAndLists.Run2();
-L1Dictionarys.Run1();
-
+//L1Dictionarys.Run1();
+//var BookStorageApp = new BookStorageApp();
+//BookStorageApp.Run();
+//L2GettersAndSetters.Run();
+//L2Encapsulate.Run();
+L2Interfaces.Run();
+Console.WriteLine("\n");
 Console.WriteLine("----------------------");

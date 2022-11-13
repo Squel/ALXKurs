@@ -5,7 +5,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ALXKurs.Assignments.M2
+namespace ALXKurs.Assignments.M2.L1
 {
     public class SeniorityService
     {
@@ -19,27 +19,27 @@ namespace ALXKurs.Assignments.M2
             midEmployess = new List<Employee>();
             SeniorEmployee = new List<Employee>();
 
-            
+
 
         }
-        public void ClassifySeniorBySalary (Employee employee)
+        public void ClassifySeniorBySalary(Employee employee)
         {
-            
+
             if (employee.Salary < 2500)
             {
                 JuniorEmployess.Add(employee);
             }
-            else if (employee.Salary > 6000) 
+            else if (employee.Salary > 6000)
             {
-              SeniorEmployee.Add (employee);
+                SeniorEmployee.Add(employee);
             }
-            else 
-                    {
-                midEmployess.Add (employee);
+            else
+            {
+                midEmployess.Add(employee);
 
             }
 
-            
+
         }
 
         public void ClassifySeniorByExperience(Employee employee)
@@ -58,7 +58,7 @@ namespace ALXKurs.Assignments.M2
 
             }
 
-            
+
         }
         public void ClearLists()
         {

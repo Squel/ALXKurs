@@ -7,4 +7,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\CommonFunctionalites\CommonFunctionalites.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Lessons\M2\L2\Abstract\" />
+  </ItemGroup>
+
 </Project>
