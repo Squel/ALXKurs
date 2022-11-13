@@ -9,8 +9,8 @@ namespace ALXKurs.Lessons.M2.L2.Classes.Inheritens
 {
     public class ChessPiece
     {
-        public ChessColor Color { get; set; }
-        public ChessFiguresTypes Type { get; set; }
+        public ChessColor? Color { get; set; }
+        public ChessFiguresTypes? Type { get; set; }
         public int XPosition { get; set; }
         public int YPosition { get; set; }
 
@@ -29,9 +29,11 @@ namespace ALXKurs.Lessons.M2.L2.Classes.Inheritens
 
         public void Present()
         {
+            Console.WriteLine($"Figure type: {Type}");
             Console.WriteLine($"Color: {Color}");
             Console.WriteLine($"X position: {XPosition}");
             Console.WriteLine($"Y position: {YPosition}");
+            Console.WriteLine($"Is alive: {IsAlive}");
         }
     }
 }

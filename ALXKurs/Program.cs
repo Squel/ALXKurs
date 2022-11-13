@@ -35,6 +35,7 @@ Console.WriteLine("\n");
 //BookStorageApp.Run();
 //L2GettersAndSetters.Run();
 //L2Encapsulate.Run();
-L2Interfaces.Run();
+//L2Interfaces.Run();
+L2Inherites.Run();
 Console.WriteLine("\n");
 Console.WriteLine("----------------------");
