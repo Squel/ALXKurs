@@ -8,6 +8,7 @@ Console.WriteLine("----------------------\n");
 //Homework5Test.Run();
 //Homework3Test.Run();
 //emorgan.Run();
-Str21.Run();
+//Str21.Run();
+ShootingRange.Run();
 Console.WriteLine("\n");
 Console.WriteLine("----------------------\n");
