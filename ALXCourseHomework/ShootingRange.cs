@@ -118,7 +118,6 @@ namespace ALXCourseHomework
             Console.WriteLine("Choose from avalibility weapons");
             for (int i = 0; i < weapons.Count; i++)
             {
-
                 var it = weapons[i];
                 Console.WriteLine($"{i}. {it.Name} bullet price {it.BulletPrice} PLN");
             }
