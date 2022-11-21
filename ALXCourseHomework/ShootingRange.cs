@@ -16,11 +16,11 @@ namespace ALXCourseHomework
         }
         public static void Run()
         {
-            bool czytaj_znak = true;
+            bool read_mark= true;
             List<GunWithBullets> guns;
             List<TrackReservation> reservations;
 
-            while (czytaj_znak)
+            while (read_mark)
             {
                 Show_menu();
                 var x = Console.ReadLine();
@@ -38,7 +38,7 @@ namespace ALXCourseHomework
                     case "3":
                         break;
                     case "4":
-                        czytaj_znak = false;
+                        read_mark = false;
                         break;
                     default:
                         break;
