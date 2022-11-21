@@ -22,7 +22,7 @@ namespace ALXCourseHomework
 
             while (czytaj_znak)
             {
-                Wyswietl_menu();
+                Show_menu();
                 var x = Console.ReadLine();
 
                 switch (x)
@@ -46,7 +46,7 @@ namespace ALXCourseHomework
             }   
         }
 
-        private static void Wyswietl_menu()
+        private static void Show_menu()
         {
             Console.Clear();
             Console.WriteLine("Welcome to new Shooting Range in Warsaw");
