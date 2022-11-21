@@ -151,10 +151,6 @@ namespace ALXCourseHomework
         }
         private static void PrintRecipt(List<GunWithBullets> items)
         {
-           // var streamWriter = new StreamWriter( Path.Combine( AppDomain.CurrentDomain.BaseDirectory , Path.DirectorySeparatorChar.ToString(),  "last-recipt.txt"));
-           // streamWriter.WriteLine("Shooting Range in Warsaw");
-           // streamWriter.WriteLine("========================");
-           // streamWriter.WriteLine("Selected guns:");
            Console.WriteLine("");
             Console.WriteLine("Shooting Range in Warsaw");
             Console.WriteLine("========================");
@@ -163,12 +159,9 @@ namespace ALXCourseHomework
             foreach(var gun in items)
             {
                 total += gun.GetPrice();
-                //streamWriter.WriteLine($"{gun.Gun.Name} no of bullets {gun.NoOfBullets} [{gun.Gun.BulletPrice}] price: {gun.GetPrice()}");
                 Console.WriteLine($"{gun.Gun.Name} no of bullets {gun.NoOfBullets} [{gun.Gun.BulletPrice}] price: {gun.GetPrice()}");
             }
-            //streamWriter.WriteLine("========================");
             Console.WriteLine("========================");
-            //streamWriter.WriteLine($"Total price: {total}");
             Console.WriteLine($"Total price: {total}");
             Console.ReadKey();   
         }
@@ -231,7 +224,7 @@ namespace ALXCourseHomework
                 int z = track.NoOfHouersTrack * 30;
                 TimeSpan t = TimeSpan.FromMinutes(z); 
                 total1 += track.GetPriceT();
-                Console.WriteLine($"{track.Track.Track}, reservating for time {t} [{track.Track.PriceOfTrack}] price: {track.GetPriceT()}");
+                Console.WriteLine($"{track.Track.Track}, reservating for {t} [{track.Track.PriceOfTrack}] price: {track.GetPriceT()}");
             }
             Console.WriteLine("========================");
             Console.WriteLine($"Total price: {total1}");
