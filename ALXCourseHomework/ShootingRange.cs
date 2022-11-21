@@ -190,7 +190,6 @@ namespace ALXCourseHomework
             decimal total = 0;
             foreach(var gun in guns)
             {
-
                 total += gun.GetPrice();
             }
             Console.WriteLine($"Total price {total}");
