@@ -18,7 +18,7 @@ namespace ALXCourseHomework.MaterialsAssignments
 
         public void Present()
         {
-            Console.WriteLine($"Towar: Id: {Id}, Cenna netto: {Netto}, Vat: {Vat}, Ilość w opakowaniu: {Ilosc}, Ilość pudełek na magazynie: {Pudelko}");
+            Console.WriteLine($"Towar: Id: {Id}, Cenna netto: {Netto}zł, Vat: {Vat}, Ilość w opakowaniu: {Ilosc}, Ilość pudełek na magazynie: {Pudelko}");
         }
     }
 

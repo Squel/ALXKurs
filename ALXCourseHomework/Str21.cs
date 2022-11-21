@@ -50,13 +50,11 @@ namespace ALXCourseHomework
             towar5.Ilosc = 4;
             towar5.Pudelko = 1;
             towar5.Present();
-            
-            
         }
 
         private void cena_brutto()
         {
-
+        
         }
 
         
