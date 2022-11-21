@@ -19,6 +19,7 @@ namespace ALXCourseHomework
             bool czytaj_znak = true;
             List<GunWithBullets> guns;
             List<TrackReservation> reservations;
+
             while (czytaj_znak)
             {
                 Wyswietl_menu();
@@ -42,8 +43,7 @@ namespace ALXCourseHomework
                     default:
                         break;
                 }   
-            }
-            
+            }   
         }
 
         private static void Wyswietl_menu()
