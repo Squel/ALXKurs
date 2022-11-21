@@ -100,7 +100,12 @@ namespace ALXCourseHomework
                 var line = Console.ReadLine();
                 if (int.TryParse(line, out timeTrack) && timeTrack >= 0 && timeTrack < 24)
                 {
+                    
                     break;
+                }
+                else
+                {
+                    Console.WriteLine("Incorrect unit");
                 }
             }
             var selectedTime = new TrackReservation(selectedTrack, timeTrack);
@@ -136,6 +141,10 @@ namespace ALXCourseHomework
                 if (int.TryParse(line, out bullets) && bullets >= 0)
                 {
                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Incorrect number of bullets");
                 }
             }
             var selectedItem = new GunWithBullets(selectedWeapon, bullets);
