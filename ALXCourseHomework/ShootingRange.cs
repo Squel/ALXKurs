@@ -91,13 +91,14 @@ namespace ALXCourseHomework
                     break;
                 }
             }
-            Console.WriteLine("How many time ? (Standard time is 30min - choose 1, if 1Houer choose 2)");
             int timeTrack;
             while (true)
             {
-                Console.Write("How many time ? (Standard time is 30min - choose 1, if 1Houer choose 2)");
+                Console.WriteLine("The maximum track booking time is 12 hours (24 units)");
+                Console.WriteLine("One unit corresponds to 30 minutes, when booking for 1 hour, enter 2 units.");
+                Console.WriteLine("Please type how many units ?");
                 var line = Console.ReadLine();
-                if (int.TryParse(line, out timeTrack) && timeTrack >= 0)
+                if (int.TryParse(line, out timeTrack) && timeTrack >= 0 && timeTrack < 24)
                 {
                     break;
                 }
@@ -127,7 +128,6 @@ namespace ALXCourseHomework
                     break;
                 }
             }
-            Console.WriteLine("How many bullets needs ?");
             int bullets;
             while (true)
             {
@@ -148,6 +148,7 @@ namespace ALXCourseHomework
            // streamWriter.WriteLine("Shooting Range in Warsaw");
            // streamWriter.WriteLine("========================");
            // streamWriter.WriteLine("Selected guns:");
+           Console.WriteLine("");
             Console.WriteLine("Shooting Range in Warsaw");
             Console.WriteLine("========================");
             Console.WriteLine("Selected guns:");
@@ -214,14 +215,17 @@ namespace ALXCourseHomework
         }
         private static void PrintRecipe1(List<TrackReservation> items1)
         {
+            Console.WriteLine("");
             Console.WriteLine("Shooting Range in Warsaw");
             Console.WriteLine("========================");
             Console.WriteLine("Selected tracks:");
             decimal total1 = 0;
             foreach (var track in items1)
             {
+                int z = track.NoOfHouersTrack * 30;
+                TimeSpan t = TimeSpan.FromMinutes(z); 
                 total1 += track.GetPriceT();
-                Console.WriteLine($"{track.Track.Track} no of time {track.NoOfHouersTrack} [{track.Track.PriceOfTrack}] price: {track.GetPriceT()}");
+                Console.WriteLine($"{track.Track.Track}, reservating for time {t} [{track.Track.PriceOfTrack}] price: {track.GetPriceT()}");
             }
             Console.WriteLine("========================");
             Console.WriteLine($"Total price: {total1}");
