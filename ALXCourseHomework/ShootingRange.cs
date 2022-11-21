@@ -99,8 +99,7 @@ namespace ALXCourseHomework
                 Console.WriteLine("Please type how many units ?");
                 var line = Console.ReadLine();
                 if (int.TryParse(line, out timeTrack) && timeTrack >= 0 && timeTrack < 24)
-                {
-                    
+                {  
                     break;
                 }
                 else
