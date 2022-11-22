@@ -281,6 +281,7 @@ namespace ALXCourseHomework
             Console.WriteLine("========================");
             wrtier.WriteLine($"Total price: {total}");
             Console.WriteLine($"Total price: {total}");
+            wrtier.Close();
             Console.ReadKey();
 
         }
