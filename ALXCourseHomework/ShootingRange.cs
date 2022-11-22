@@ -7,8 +7,6 @@ namespace ALXCourseHomework
     {
         public ShootingRange()
         {
-            
-
         }
         public static void Run()
         {
@@ -275,15 +273,12 @@ namespace ALXCourseHomework
                     Console.WriteLine($"{track.Track.Track}, reservating for {t} [{track.Track.PriceOfTrack}] price: {track.GetPriceT()}");
                 }
             }
-
-
             wrtier.WriteLine("========================");
             Console.WriteLine("========================");
             wrtier.WriteLine($"Total price: {total}");
             Console.WriteLine($"Total price: {total}");
             wrtier.Close();
             Console.ReadKey();
-
         }
     }
 }
