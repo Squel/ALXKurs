@@ -6,13 +6,14 @@ namespace ALXCourseHomework
     {
         public ShootingRange()
         {
+            
 
         }
         public static void Run()
         {
             bool read_mark= true;
-            List<GunWithBullets> guns;
-            List<TrackReservation> reservations;
+            List<GunWithBullets> guns= new();
+            List<TrackReservation> reservations = new();
 
             while (read_mark)
             {
@@ -30,6 +31,9 @@ namespace ALXCourseHomework
                         PrintRecipe1(reservations);
                         break;
                     case "3":
+                        PrintRecipt2(guns, reservations);
+                        guns.Clear();
+                        reservations.Clear();
                         break;
                     case "4":
                         read_mark = false;
@@ -149,7 +153,7 @@ namespace ALXCourseHomework
             Console.WriteLine($"Cost of all ammunitions {selectedItem.GetPrice()}");
             return selectedItem;
         }
-        private static void PrintRecipt(List<GunWithBullets> items)
+       private static void PrintRecipt(List<GunWithBullets> items)
         {
            Console.WriteLine("");
             Console.WriteLine("Shooting Range in Warsaw");
@@ -229,6 +233,55 @@ namespace ALXCourseHomework
             Console.WriteLine("========================");
             Console.WriteLine($"Total price: {total1}");
             Console.ReadKey();
+        }
+        private static void PrintRecipt2(List<GunWithBullets> items, List<TrackReservation> items1)
+        {
+            String path = @"C:\ShootRange";
+            DirectoryInfo fl = new DirectoryInfo(path);
+            fl.Create();
+            string fileName = @"C:\ShootRange\repice.txt";
+            StreamWriter wrtier = new StreamWriter(fileName);
+            wrtier.WriteLine();
+            Console.WriteLine();
+            wrtier.WriteLine("Shooting Range in Warsaw");
+            Console.WriteLine("Shooting Range in Warsaw");
+            wrtier.WriteLine("========================");
+            Console.WriteLine("========================");
+            decimal total = 0;
+
+            if (items.Count() > 0)
+            {
+                wrtier.WriteLine("Selected guns:");
+                Console.WriteLine("Selected guns:");
+                foreach (var gun in items)
+                {
+                    total += gun.GetPrice();
+                    wrtier.WriteLine($"{gun.Gun.Name} no of bullets {gun.NoOfBullets} [{gun.Gun.BulletPrice}] price: {gun.GetPrice()}");
+                    Console.WriteLine($"{gun.Gun.Name} no of bullets {gun.NoOfBullets} [{gun.Gun.BulletPrice}] price: {gun.GetPrice()}");
+                }
+            }
+
+            if (items1.Count() > 0)
+            {
+                wrtier.WriteLine("Selected tracks:");
+                Console.WriteLine("Selected tracks:");
+                foreach (var track in items1)
+                {
+                    int z = track.NoOfHouersTrack * 30;
+                    TimeSpan t = TimeSpan.FromMinutes(z);
+                    total += track.GetPriceT();
+                    wrtier.WriteLine($"{track.Track.Track}, reservating for {t} [{track.Track.PriceOfTrack}] price: {track.GetPriceT()}");
+                    Console.WriteLine($"{track.Track.Track}, reservating for {t} [{track.Track.PriceOfTrack}] price: {track.GetPriceT()}");
+                }
+            }
+
+
+            wrtier.WriteLine("========================");
+            Console.WriteLine("========================");
+            wrtier.WriteLine($"Total price: {total}");
+            Console.WriteLine($"Total price: {total}");
+            Console.ReadKey();
+
         }
     }
 }
