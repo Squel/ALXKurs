@@ -1,5 +1,6 @@
 ﻿using ALXCourseHomework.Classes;
 
+
 namespace ALXCourseHomework
 {
     public class ShootingRange
@@ -239,7 +240,7 @@ namespace ALXCourseHomework
             String path = @"C:\ShootRange";
             DirectoryInfo fl = new DirectoryInfo(path);
             fl.Create();
-            string fileName = @"C:\ShootRange\repice.txt";
+            string fileName = @"C:\\ShootRange\\repice.txt";
             StreamWriter wrtier = new StreamWriter(fileName);
             wrtier.WriteLine();
             Console.WriteLine();
