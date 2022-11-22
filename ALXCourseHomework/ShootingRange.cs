@@ -275,8 +275,13 @@ namespace ALXCourseHomework
             }
             wrtier.WriteLine("========================");
             Console.WriteLine("========================");
-            wrtier.WriteLine($"Total price: {total}");
-            Console.WriteLine($"Total price: {total}");
+            wrtier.WriteLine($"Total price netto: {total}");
+            Console.WriteLine($"Total price netto: {total}");
+            decimal Brutto = total;
+            decimal Vat = 1.23m;
+            Brutto = Decimal.Multiply(total, Vat);
+            wrtier.WriteLine($"Total price netto: {total}");
+            Console.WriteLine($"Total price netto: {Brutto}");
             wrtier.Close();
             Console.ReadKey();
         }
