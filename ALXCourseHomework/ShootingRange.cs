@@ -281,7 +281,7 @@ namespace ALXCourseHomework
             decimal Vat = 1.23m;
             Brutto = Decimal.Multiply(total, Vat);
             wrtier.WriteLine($"Total price netto: {total}");
-            Console.WriteLine($"Total price netto: {Brutto}");
+            Console.WriteLine($"Total price brutto: {Math.Round(Brutto,2)}");
             wrtier.Close();
             Console.ReadKey();
         }
