@@ -23,11 +23,11 @@ namespace ALXCourseHomework
                 {
                     case "1":
                         guns = ChooseWeapons();
-                        PrintRecipt(guns);
+                        PrintRecipt2(guns, reservations);
                         break;
                     case "2":
                         reservations = ChooseTrack();
-                        PrintRecipe1(reservations);
+                        PrintRecipt2(guns, reservations);
                         break;
                     case "3":
                         PrintRecipt2(guns, reservations);
