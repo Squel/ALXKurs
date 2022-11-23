@@ -23,14 +23,14 @@ namespace ALXCourseHomework
                 {
                     case "1":
                         guns = ChooseWeapons();
-                        PrintRecipt2(guns, reservations);
+                        PrintRecipt(guns, reservations);
                         break;
                     case "2":
                         reservations = ChooseTrack();
-                        PrintRecipt2(guns, reservations);
+                        PrintRecipt(guns, reservations);
                         break;
                     case "3":
-                        PrintRecipt2(guns, reservations);
+                        PrintRecipt(guns, reservations);
                         guns.Clear();
                         reservations.Clear();
                         break;
@@ -56,11 +56,11 @@ namespace ALXCourseHomework
 
         static List<Guns> weapons = new List<Guns>()
         {
-            new Guns("Shootgun", 12.25m ),
-            new Guns("UZI", 8.34m ),
-            new Guns("Beretta", 5.50m ),
-            new Guns("Colt", 9.64m ),
-            new Guns("H&K", 10.65m ),
+            new Guns("Shootgun", 12.25m),
+            new Guns("UZI", 8.34m),
+            new Guns("Beretta", 5.50m),
+            new Guns("Colt", 9.64m),
+            new Guns("H&K", 10.65m),
 
         };
 
@@ -120,8 +120,8 @@ namespace ALXCourseHomework
             Console.WriteLine("Choose from avalibility weapons");
             for (int i = 0; i < weapons.Count; i++)
             {
-                var it = weapons[i];
-                Console.WriteLine($"{i}. {it.Name} bullet price {it.BulletPrice} PLN");
+                    var it = weapons[i];
+                    Console.WriteLine($"{i}. {it.Name} bullet price {it.BulletPrice} PLN");   
             }
             Guns selectedWeapon;
             while (true)
@@ -140,33 +140,17 @@ namespace ALXCourseHomework
                 Console.Write("How many bullets: ");
                 var line = Console.ReadLine();
                 if (int.TryParse(line, out bullets) && bullets >= 0)
-                {
+                { 
                    break;
                 }
                 else
                 {
                     Console.WriteLine("Incorrect number of bullets");
                 }
-            }
+            }  
             var selectedItem = new GunWithBullets(selectedWeapon, bullets);
             Console.WriteLine($"Cost of all ammunitions {selectedItem.GetPrice()}");
             return selectedItem;
-        }
-       private static void PrintRecipt(List<GunWithBullets> items)
-        {
-           Console.WriteLine("");
-            Console.WriteLine("Shooting Range in Warsaw");
-            Console.WriteLine("========================");
-            Console.WriteLine("Selected guns:");
-            decimal total = 0;
-            foreach(var gun in items)
-            {
-                total += gun.GetPrice();
-                Console.WriteLine($"{gun.Gun.Name} no of bullets {gun.NoOfBullets} [{gun.Gun.BulletPrice}] price: {gun.GetPrice()}");
-            }
-            Console.WriteLine("========================");
-            Console.WriteLine($"Total price: {total}");
-            Console.ReadKey();   
         }
 
         private static List<GunWithBullets> ChooseWeapons()
@@ -215,25 +199,7 @@ namespace ALXCourseHomework
             Console.ReadKey();
             return tracks;
         }
-        private static void PrintRecipe1(List<TrackReservation> items1)
-        {
-            Console.WriteLine("");
-            Console.WriteLine("Shooting Range in Warsaw");
-            Console.WriteLine("========================");
-            Console.WriteLine("Selected tracks:");
-            decimal total1 = 0;
-            foreach (var track in items1)
-            {
-                int z = track.NoOfHouersTrack * 30;
-                TimeSpan t = TimeSpan.FromMinutes(z); 
-                total1 += track.GetPriceT();
-                Console.WriteLine($"{track.Track.Track}, reservating for {t} [{track.Track.PriceOfTrack}] price: {track.GetPriceT()}");
-            }
-            Console.WriteLine("========================");
-            Console.WriteLine($"Total price: {total1}");
-            Console.ReadKey();
-        }
-        private static void PrintRecipt2(List<GunWithBullets> items, List<TrackReservation> items1)
+        private static void PrintRecipt(List<GunWithBullets> items, List<TrackReservation> items1)
         {
             String path = @"C:\ShootRange";
             DirectoryInfo fl = new DirectoryInfo(path);
@@ -280,7 +246,7 @@ namespace ALXCourseHomework
             decimal Brutto = total;
             decimal Vat = 1.23m;
             Brutto = Decimal.Multiply(total, Vat);
-            wrtier.WriteLine($"Total price netto: {total}");
+            wrtier.WriteLine($"Total price netto: {Math.Round(Brutto, 2)}");
             Console.WriteLine($"Total price brutto: {Math.Round(Brutto,2)}");
             wrtier.Close();
             Console.ReadKey();

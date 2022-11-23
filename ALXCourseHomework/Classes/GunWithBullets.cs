@@ -4,7 +4,9 @@
     {
         public Guns Gun { get; private set; }
         public int NoOfBullets { get; private set; }
-        public GunWithBullets(Guns gun, int bullets) {
+
+        public GunWithBullets(Guns gun, int bullets) 
+        {
         Gun= gun;
             NoOfBullets= bullets;
         }
@@ -13,5 +15,7 @@
         {
             return Gun.BulletPrice * NoOfBullets;
         }
+
+        
     }
 }
