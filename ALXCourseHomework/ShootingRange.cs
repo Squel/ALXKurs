@@ -16,7 +16,7 @@ namespace ALXCourseHomework
 
             while (read_mark)
             {
-                Show_menu();
+                ShootingRangeServices.Show_menu();
                 var x = Console.ReadLine();
 
                 switch (x)
@@ -42,18 +42,6 @@ namespace ALXCourseHomework
                 }   
             }   
         }
-
-        private static void Show_menu()
-        {
-            Console.Clear();
-            Console.WriteLine("Welcome to new Shooting Range in Warsaw");
-            Console.WriteLine("Choose option form menu:");
-            Console.WriteLine("1. Choose Weapon");
-            Console.WriteLine("2. Choose track");
-            Console.WriteLine("3. Summary");
-            Console.WriteLine("4. Quit");
-        }
-
         static List<Guns> weapons = new List<Guns>()
         {
             new Guns("Shootgun", 12.25m),
@@ -61,7 +49,6 @@ namespace ALXCourseHomework
             new Guns("Beretta", 5.50m),
             new Guns("Colt", 9.64m),
             new Guns("H&K", 10.65m),
-
         };
 
         static List<Tracks> tracks = new List<Tracks>()
@@ -74,7 +61,6 @@ namespace ALXCourseHomework
             new Tracks("Track 6 - Regular", 20.00m),
             new Tracks("Track 7 - Urban city", 85.00m),
         };
-
         private static TrackReservation ChooseSingleTrack()
         {
             Console.WriteLine("Choose from avalibility tracks");
@@ -102,7 +88,7 @@ namespace ALXCourseHomework
                 Console.WriteLine("Please type how many units ?");
                 var line = Console.ReadLine();
                 if (int.TryParse(line, out timeTrack) && timeTrack >= 0 && timeTrack < 24)
-                {  
+                {
                     break;
                 }
                 else
@@ -114,7 +100,7 @@ namespace ALXCourseHomework
             Console.WriteLine($"Cost of all tracks {selectedTime.GetPriceT()}");
             return selectedTime;
         }
-    
+
         private static GunWithBullets ChooseSingleWeapon()
         {
             Console.WriteLine("Choose from avalibility weapons");
