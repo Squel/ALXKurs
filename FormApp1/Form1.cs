@@ -1,4 +1,3 @@
-using Microsoft.VisualBasic;
 using System.Diagnostics;
 
 namespace FormApp1
@@ -37,9 +36,23 @@ namespace FormApp1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            var result = PreformOperation(Convert.ToDouble(xNumberTextBox.Text),
-                                          Convert.ToDouble(yNumberTextBox.Text));
-            resultTextBox.Text = result.ToString();
+            try
+            {
+               var result = PreformOperation(Convert.ToDouble(xNumberTextBox.Text),
+                                              Convert.ToDouble(yNumberTextBox.Text));
+                resultTextBox.Text = result.ToString();
+                LogTextBox.Text = "Operation Good";
+            }
+            catch (Exception ex) 
+            {
+                var exceptionMessage = "Exception Cought!";
+                LogTextBox.Text = exceptionMessage;
+                
+            }
+            finally
+            {
+                LogTextBox.Text = "Operation Good";
+            }     
         }
 
         private double PreformOperation(double x, double y)

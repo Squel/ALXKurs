@@ -46,6 +46,8 @@
             this.SubstractRadioButton = new System.Windows.Forms.RadioButton();
             this.MultiplyRadioButton = new System.Windows.Forms.RadioButton();
             this.DivideRadioButton = new System.Windows.Forms.RadioButton();
+            this.LogTextBox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -216,12 +218,33 @@
             this.DivideRadioButton.Text = "Divide";
             this.DivideRadioButton.UseVisualStyleBackColor = true;
             // 
+            // LogTextBox
+            // 
+            this.LogTextBox.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.LogTextBox.Location = new System.Drawing.Point(222, 111);
+            this.LogTextBox.Multiline = true;
+            this.LogTextBox.Name = "LogTextBox";
+            this.LogTextBox.ReadOnly = true;
+            this.LogTextBox.Size = new System.Drawing.Size(282, 264);
+            this.LogTextBox.TabIndex = 18;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(222, 93);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(27, 15);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "Log";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(912, 464);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.LogTextBox);
             this.Controls.Add(this.DivideRadioButton);
             this.Controls.Add(this.MultiplyRadioButton);
             this.Controls.Add(this.SubstractRadioButton);
@@ -268,5 +291,7 @@
         private RadioButton SubstractRadioButton;
         private RadioButton MultiplyRadioButton;
         private RadioButton DivideRadioButton;
+        private TextBox LogTextBox;
+        private Label label3;
     }
 }
