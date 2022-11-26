@@ -14,7 +14,7 @@ namespace ALXKurs.Lessons.M2.L2
             chessPiece.YPosition = 1;
             chessPiece.Move();
             chessPiece.Present();
-            ConfigrLivness(chessPiece);
+            
 
             Queen queen = new Queen();
             queen.XPosition = 1;
@@ -22,7 +22,7 @@ namespace ALXKurs.Lessons.M2.L2
             queen.Move();
             queen.Color = ChessColor.WHITE;
             queen.Present();
-            ConfigrLivness(queen);
+            
 
             Knight knight = new Knight();
             knight.XPosition = 1;
@@ -30,7 +30,7 @@ namespace ALXKurs.Lessons.M2.L2
             knight.Move();
             knight.Color = ChessColor.BLACK;
             knight.Present();
-            ConfigrLivness(knight);
+            
 
             Bishop bishop = new Bishop();
             bishop.XPosition = 1;
@@ -38,11 +38,8 @@ namespace ALXKurs.Lessons.M2.L2
             bishop.Move();
             bishop.Color = ChessColor.BLACK;
             bishop.Present();
-            ConfigrLivness(bishop);
+          
         }
-    private static void ConfigrLivness (ChessPiece queen)
-        {
-
-        }
+   
     }
 }
