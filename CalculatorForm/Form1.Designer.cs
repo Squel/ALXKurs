@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.ResaultTextBox = new System.Windows.Forms.TextBox();
             this.Key7Button = new System.Windows.Forms.Button();
             this.Key8Button = new System.Windows.Forms.Button();
             this.Key9Button = new System.Windows.Forms.Button();
@@ -46,15 +46,16 @@
             this.KeyDivineButton = new System.Windows.Forms.Button();
             this.ClearButton = new System.Windows.Forms.Button();
             this.ResultButton = new System.Windows.Forms.Button();
+            this.StringBuilderButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // ResaultTextBox
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(28, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(587, 82);
-            this.textBox1.TabIndex = 0;
+            this.ResaultTextBox.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ResaultTextBox.Location = new System.Drawing.Point(28, 12);
+            this.ResaultTextBox.Name = "ResaultTextBox";
+            this.ResaultTextBox.Size = new System.Drawing.Size(587, 82);
+            this.ResaultTextBox.TabIndex = 0;
             // 
             // Key7Button
             // 
@@ -66,6 +67,7 @@
             this.Key7Button.TabIndex = 1;
             this.Key7Button.Text = "7";
             this.Key7Button.UseVisualStyleBackColor = false;
+            this.Key7Button.Click += new System.EventHandler(this.Key7Button_Click);
             // 
             // Key8Button
             // 
@@ -77,6 +79,7 @@
             this.Key8Button.TabIndex = 2;
             this.Key8Button.Text = "8";
             this.Key8Button.UseVisualStyleBackColor = false;
+            this.Key8Button.Click += new System.EventHandler(this.Key8Button_Click);
             // 
             // Key9Button
             // 
@@ -88,6 +91,7 @@
             this.Key9Button.TabIndex = 3;
             this.Key9Button.Text = "9";
             this.Key9Button.UseVisualStyleBackColor = false;
+            this.Key9Button.Click += new System.EventHandler(this.Key9Button_Click);
             // 
             // Key6Button
             // 
@@ -99,6 +103,7 @@
             this.Key6Button.TabIndex = 4;
             this.Key6Button.Text = "6";
             this.Key6Button.UseVisualStyleBackColor = false;
+            this.Key6Button.Click += new System.EventHandler(this.Key6Button_Click);
             // 
             // Key5Button
             // 
@@ -110,6 +115,7 @@
             this.Key5Button.TabIndex = 5;
             this.Key5Button.Text = "5";
             this.Key5Button.UseVisualStyleBackColor = false;
+            this.Key5Button.Click += new System.EventHandler(this.Key5Button_Click);
             // 
             // Key4Button
             // 
@@ -121,6 +127,7 @@
             this.Key4Button.TabIndex = 6;
             this.Key4Button.Text = "4";
             this.Key4Button.UseVisualStyleBackColor = false;
+            this.Key4Button.Click += new System.EventHandler(this.Key4Button_Click);
             // 
             // Key3Button
             // 
@@ -132,6 +139,7 @@
             this.Key3Button.TabIndex = 7;
             this.Key3Button.Text = "3";
             this.Key3Button.UseVisualStyleBackColor = false;
+            this.Key3Button.Click += new System.EventHandler(this.Key3Button_Click);
             // 
             // Key2Button
             // 
@@ -143,6 +151,7 @@
             this.Key2Button.TabIndex = 8;
             this.Key2Button.Text = "2";
             this.Key2Button.UseVisualStyleBackColor = false;
+            this.Key2Button.Click += new System.EventHandler(this.Key2Button_Click);
             // 
             // Key1Button
             // 
@@ -154,6 +163,7 @@
             this.Key1Button.TabIndex = 9;
             this.Key1Button.Text = "1";
             this.Key1Button.UseVisualStyleBackColor = false;
+            this.Key1Button.Click += new System.EventHandler(this.Key1Button_Click);
             // 
             // Key0Button
             // 
@@ -165,6 +175,7 @@
             this.Key0Button.TabIndex = 10;
             this.Key0Button.Text = "0";
             this.Key0Button.UseVisualStyleBackColor = false;
+            this.Key0Button.Click += new System.EventHandler(this.Key0Button_Click);
             // 
             // KeyAddButton
             // 
@@ -176,6 +187,7 @@
             this.KeyAddButton.TabIndex = 11;
             this.KeyAddButton.Text = "+";
             this.KeyAddButton.UseVisualStyleBackColor = false;
+            this.KeyAddButton.Click += new System.EventHandler(this.KeyAddButton_Click);
             // 
             // KeySubstractButton
             // 
@@ -187,6 +199,7 @@
             this.KeySubstractButton.TabIndex = 12;
             this.KeySubstractButton.Text = "-";
             this.KeySubstractButton.UseVisualStyleBackColor = false;
+            this.KeySubstractButton.Click += new System.EventHandler(this.KeySubstractButton_Click);
             // 
             // KeyMultipleyButton
             // 
@@ -198,6 +211,7 @@
             this.KeyMultipleyButton.TabIndex = 13;
             this.KeyMultipleyButton.Text = "*";
             this.KeyMultipleyButton.UseVisualStyleBackColor = false;
+            this.KeyMultipleyButton.Click += new System.EventHandler(this.KeyMultipleyButton_Click);
             // 
             // KeyCommonButton
             // 
@@ -209,6 +223,7 @@
             this.KeyCommonButton.TabIndex = 14;
             this.KeyCommonButton.Text = ",";
             this.KeyCommonButton.UseVisualStyleBackColor = false;
+            this.KeyCommonButton.Click += new System.EventHandler(this.KeyCommonButton_Click);
             // 
             // KeyDivineButton
             // 
@@ -220,6 +235,7 @@
             this.KeyDivineButton.TabIndex = 15;
             this.KeyDivineButton.Text = "/";
             this.KeyDivineButton.UseVisualStyleBackColor = false;
+            this.KeyDivineButton.Click += new System.EventHandler(this.KeyDivineButton_Click);
             // 
             // ClearButton
             // 
@@ -231,6 +247,7 @@
             this.ClearButton.TabIndex = 16;
             this.ClearButton.Text = "C";
             this.ClearButton.UseVisualStyleBackColor = false;
+            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
             // ResultButton
             // 
@@ -242,12 +259,26 @@
             this.ResultButton.TabIndex = 17;
             this.ResultButton.Text = "=";
             this.ResultButton.UseVisualStyleBackColor = false;
+            this.ResultButton.Click += new System.EventHandler(this.ResultButton_Click);
+            // 
+            // StringBuilderButton
+            // 
+            this.StringBuilderButton.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.StringBuilderButton.Font = new System.Drawing.Font("Segoe UI", 14.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.StringBuilderButton.Location = new System.Drawing.Point(30, 608);
+            this.StringBuilderButton.Name = "StringBuilderButton";
+            this.StringBuilderButton.Size = new System.Drawing.Size(585, 100);
+            this.StringBuilderButton.TabIndex = 18;
+            this.StringBuilderButton.Text = "String Builder Demo";
+            this.StringBuilderButton.UseVisualStyleBackColor = false;
+            this.StringBuilderButton.Click += new System.EventHandler(this.StringBuilderButton_Click);
             // 
             // CalculatorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(648, 607);
+            this.ClientSize = new System.Drawing.Size(648, 720);
+            this.Controls.Add(this.StringBuilderButton);
             this.Controls.Add(this.ResultButton);
             this.Controls.Add(this.ClearButton);
             this.Controls.Add(this.KeyDivineButton);
@@ -265,7 +296,7 @@
             this.Controls.Add(this.Key9Button);
             this.Controls.Add(this.Key8Button);
             this.Controls.Add(this.Key7Button);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.ResaultTextBox);
             this.Name = "CalculatorForm";
             this.Text = "Calculator";
             this.ResumeLayout(false);
@@ -275,7 +306,7 @@
 
         #endregion
 
-        private TextBox textBox1;
+        private TextBox ResaultTextBox;
         private Button Key7Button;
         private Button Key8Button;
         private Button Key9Button;
@@ -293,5 +324,6 @@
         private Button KeyDivineButton;
         private Button ClearButton;
         private Button ResultButton;
+        private Button StringBuilderButton;
     }
 }
