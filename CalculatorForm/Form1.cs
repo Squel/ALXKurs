@@ -1,5 +1,5 @@
-using CalculatorForm.Services;
-using CalculatorForm.Services.Interface;
+using CommonFunctionalites.Services.Interface;
+using CommonFunctionalites.Services;
 using System.Text;
 
 namespace CalculatorForm
@@ -8,7 +8,7 @@ namespace CalculatorForm
     {
 
         private StringBuilder ExpressionBuilder { get; set; }
-        private ICalculatorService ExpressionService { get; set; }
+        private ICalculatorServices ExpressionService { get; set; }
 
         public CalculatorForm()
         {
