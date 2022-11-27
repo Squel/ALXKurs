@@ -65,9 +65,10 @@
             this.Key7Button.Name = "Key7Button";
             this.Key7Button.Size = new System.Drawing.Size(100, 100);
             this.Key7Button.TabIndex = 1;
+            this.Key7Button.Tag = "7";
             this.Key7Button.Text = "7";
             this.Key7Button.UseVisualStyleBackColor = false;
-            this.Key7Button.Click += new System.EventHandler(this.Key7Button_Click);
+            this.Key7Button.Click += new System.EventHandler(this.ExpressionButton_Click);
             // 
             // Key8Button
             // 
@@ -77,9 +78,10 @@
             this.Key8Button.Name = "Key8Button";
             this.Key8Button.Size = new System.Drawing.Size(100, 100);
             this.Key8Button.TabIndex = 2;
+            this.Key8Button.Tag = "8";
             this.Key8Button.Text = "8";
             this.Key8Button.UseVisualStyleBackColor = false;
-            this.Key8Button.Click += new System.EventHandler(this.Key8Button_Click);
+            this.Key8Button.Click += new System.EventHandler(this.ExpressionButton_Click);
             // 
             // Key9Button
             // 
@@ -89,9 +91,10 @@
             this.Key9Button.Name = "Key9Button";
             this.Key9Button.Size = new System.Drawing.Size(100, 100);
             this.Key9Button.TabIndex = 3;
+            this.Key9Button.Tag = "9";
             this.Key9Button.Text = "9";
             this.Key9Button.UseVisualStyleBackColor = false;
-            this.Key9Button.Click += new System.EventHandler(this.Key9Button_Click);
+            this.Key9Button.Click += new System.EventHandler(this.ExpressionButton_Click);
             // 
             // Key6Button
             // 
@@ -101,9 +104,10 @@
             this.Key6Button.Name = "Key6Button";
             this.Key6Button.Size = new System.Drawing.Size(100, 100);
             this.Key6Button.TabIndex = 4;
+            this.Key6Button.Tag = "6";
             this.Key6Button.Text = "6";
             this.Key6Button.UseVisualStyleBackColor = false;
-            this.Key6Button.Click += new System.EventHandler(this.Key6Button_Click);
+            this.Key6Button.Click += new System.EventHandler(this.ExpressionButton_Click);
             // 
             // Key5Button
             // 
@@ -113,9 +117,10 @@
             this.Key5Button.Name = "Key5Button";
             this.Key5Button.Size = new System.Drawing.Size(100, 100);
             this.Key5Button.TabIndex = 5;
+            this.Key5Button.Tag = "5";
             this.Key5Button.Text = "5";
             this.Key5Button.UseVisualStyleBackColor = false;
-            this.Key5Button.Click += new System.EventHandler(this.Key5Button_Click);
+            this.Key5Button.Click += new System.EventHandler(this.ExpressionButton_Click);
             // 
             // Key4Button
             // 
@@ -125,9 +130,10 @@
             this.Key4Button.Name = "Key4Button";
             this.Key4Button.Size = new System.Drawing.Size(100, 100);
             this.Key4Button.TabIndex = 6;
+            this.Key4Button.Tag = "4";
             this.Key4Button.Text = "4";
             this.Key4Button.UseVisualStyleBackColor = false;
-            this.Key4Button.Click += new System.EventHandler(this.Key4Button_Click);
+            this.Key4Button.Click += new System.EventHandler(this.ExpressionButton_Click);
             // 
             // Key3Button
             // 
@@ -137,9 +143,10 @@
             this.Key3Button.Name = "Key3Button";
             this.Key3Button.Size = new System.Drawing.Size(100, 100);
             this.Key3Button.TabIndex = 7;
+            this.Key3Button.Tag = "3";
             this.Key3Button.Text = "3";
             this.Key3Button.UseVisualStyleBackColor = false;
-            this.Key3Button.Click += new System.EventHandler(this.Key3Button_Click);
+            this.Key3Button.Click += new System.EventHandler(this.ExpressionButton_Click);
             // 
             // Key2Button
             // 
@@ -149,9 +156,10 @@
             this.Key2Button.Name = "Key2Button";
             this.Key2Button.Size = new System.Drawing.Size(100, 100);
             this.Key2Button.TabIndex = 8;
+            this.Key2Button.Tag = "2";
             this.Key2Button.Text = "2";
             this.Key2Button.UseVisualStyleBackColor = false;
-            this.Key2Button.Click += new System.EventHandler(this.Key2Button_Click);
+            this.Key2Button.Click += new System.EventHandler(this.ExpressionButton_Click);
             // 
             // Key1Button
             // 
@@ -161,9 +169,10 @@
             this.Key1Button.Name = "Key1Button";
             this.Key1Button.Size = new System.Drawing.Size(100, 100);
             this.Key1Button.TabIndex = 9;
+            this.Key1Button.Tag = "1";
             this.Key1Button.Text = "1";
             this.Key1Button.UseVisualStyleBackColor = false;
-            this.Key1Button.Click += new System.EventHandler(this.Key1Button_Click);
+            this.Key1Button.Click += new System.EventHandler(this.ExpressionButton_Click);
             // 
             // Key0Button
             // 
@@ -175,7 +184,7 @@
             this.Key0Button.TabIndex = 10;
             this.Key0Button.Text = "0";
             this.Key0Button.UseVisualStyleBackColor = false;
-            this.Key0Button.Click += new System.EventHandler(this.Key0Button_Click);
+            this.Key0Button.Click += new System.EventHandler(this.ExpressionButton_Click);
             // 
             // KeyAddButton
             // 
@@ -185,9 +194,10 @@
             this.KeyAddButton.Name = "KeyAddButton";
             this.KeyAddButton.Size = new System.Drawing.Size(100, 100);
             this.KeyAddButton.TabIndex = 11;
+            this.KeyAddButton.Tag = "+";
             this.KeyAddButton.Text = "+";
             this.KeyAddButton.UseVisualStyleBackColor = false;
-            this.KeyAddButton.Click += new System.EventHandler(this.KeyAddButton_Click);
+            this.KeyAddButton.Click += new System.EventHandler(this.ExpressionButton_Click);
             // 
             // KeySubstractButton
             // 
@@ -197,9 +207,10 @@
             this.KeySubstractButton.Name = "KeySubstractButton";
             this.KeySubstractButton.Size = new System.Drawing.Size(100, 100);
             this.KeySubstractButton.TabIndex = 12;
+            this.KeySubstractButton.Tag = "-";
             this.KeySubstractButton.Text = "-";
             this.KeySubstractButton.UseVisualStyleBackColor = false;
-            this.KeySubstractButton.Click += new System.EventHandler(this.KeySubstractButton_Click);
+            this.KeySubstractButton.Click += new System.EventHandler(this.ExpressionButton_Click);
             // 
             // KeyMultipleyButton
             // 
@@ -209,9 +220,10 @@
             this.KeyMultipleyButton.Name = "KeyMultipleyButton";
             this.KeyMultipleyButton.Size = new System.Drawing.Size(100, 100);
             this.KeyMultipleyButton.TabIndex = 13;
+            this.KeyMultipleyButton.Tag = "*";
             this.KeyMultipleyButton.Text = "*";
             this.KeyMultipleyButton.UseVisualStyleBackColor = false;
-            this.KeyMultipleyButton.Click += new System.EventHandler(this.KeyMultipleyButton_Click);
+            this.KeyMultipleyButton.Click += new System.EventHandler(this.ExpressionButton_Click);
             // 
             // KeyCommonButton
             // 
@@ -221,9 +233,10 @@
             this.KeyCommonButton.Name = "KeyCommonButton";
             this.KeyCommonButton.Size = new System.Drawing.Size(100, 100);
             this.KeyCommonButton.TabIndex = 14;
+            this.KeyCommonButton.Tag = ",";
             this.KeyCommonButton.Text = ",";
             this.KeyCommonButton.UseVisualStyleBackColor = false;
-            this.KeyCommonButton.Click += new System.EventHandler(this.KeyCommonButton_Click);
+            this.KeyCommonButton.Click += new System.EventHandler(this.ExpressionButton_Click);
             // 
             // KeyDivineButton
             // 
@@ -233,9 +246,10 @@
             this.KeyDivineButton.Name = "KeyDivineButton";
             this.KeyDivineButton.Size = new System.Drawing.Size(100, 100);
             this.KeyDivineButton.TabIndex = 15;
+            this.KeyDivineButton.Tag = "/";
             this.KeyDivineButton.Text = "/";
             this.KeyDivineButton.UseVisualStyleBackColor = false;
-            this.KeyDivineButton.Click += new System.EventHandler(this.KeyDivineButton_Click);
+            this.KeyDivineButton.Click += new System.EventHandler(this.ExpressionButton_Click);
             // 
             // ClearButton
             // 
@@ -245,6 +259,7 @@
             this.ClearButton.Name = "ClearButton";
             this.ClearButton.Size = new System.Drawing.Size(100, 100);
             this.ClearButton.TabIndex = 16;
+            this.ClearButton.Tag = "C";
             this.ClearButton.Text = "C";
             this.ClearButton.UseVisualStyleBackColor = false;
             this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
@@ -257,9 +272,9 @@
             this.ResultButton.Name = "ResultButton";
             this.ResultButton.Size = new System.Drawing.Size(100, 477);
             this.ResultButton.TabIndex = 17;
+            this.ResultButton.Tag = "=";
             this.ResultButton.Text = "=";
             this.ResultButton.UseVisualStyleBackColor = false;
-            this.ResultButton.Click += new System.EventHandler(this.ResultButton_Click);
             // 
             // StringBuilderButton
             // 
@@ -271,7 +286,6 @@
             this.StringBuilderButton.TabIndex = 18;
             this.StringBuilderButton.Text = "String Builder Demo";
             this.StringBuilderButton.UseVisualStyleBackColor = false;
-            this.StringBuilderButton.Click += new System.EventHandler(this.StringBuilderButton_Click);
             // 
             // CalculatorForm
             // 
