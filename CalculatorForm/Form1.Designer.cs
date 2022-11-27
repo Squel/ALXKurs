@@ -53,8 +53,11 @@
             this.ResaultTextBox.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.ResaultTextBox.Location = new System.Drawing.Point(28, 12);
             this.ResaultTextBox.Name = "ResaultTextBox";
+            this.ResaultTextBox.ReadOnly = true;
+            this.ResaultTextBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.ResaultTextBox.Size = new System.Drawing.Size(587, 82);
             this.ResaultTextBox.TabIndex = 0;
+            this.ResaultTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Key7Button
             // 
