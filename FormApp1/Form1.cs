@@ -41,7 +41,7 @@ namespace FormApp1
                var result = PreformOperation(Convert.ToDouble(xNumberTextBox.Text),
                                               Convert.ToDouble(yNumberTextBox.Text));
                 resultTextBox.Text = result.ToString();
-                LogTextBox.Text = "Operation Good";
+                LogTextBox.Text += "Operation Good";
             }
             catch (Exception ex) 
             {
@@ -51,7 +51,7 @@ namespace FormApp1
             }
             finally
             {
-                LogTextBox.Text = "Operation Good";
+                LogTextBox.Text += "Operation Good";
             }     
         }
 
