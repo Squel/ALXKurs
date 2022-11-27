@@ -16,6 +16,7 @@ namespace FormApp1
             try
             {
                 throwExceptionExample.Run();
+                MessageBox.Show("Button Clicked!");
             }
             catch(OwnExepction ex)
             {
@@ -26,8 +27,7 @@ namespace FormApp1
             {
                 LogTextBox.Text += ex.Message + "\r\n";
                 LogTextBox.Text += ex.StackTrace + "\r\n";
-            }
-            MessageBox.Show("Button Clicked!");
+            } 
         }
 
         private void RestartButton_Click(object sender, EventArgs e)
@@ -68,8 +68,7 @@ namespace FormApp1
                 LogTextBox.Text += ex.Message;
                 LogTextBox.Text += ex.StackTrace;
                 LogTextBox.Text += ex.Source;
-                resultTextBox.Text = "Invalid operation\r\n";
-                
+                resultTextBox.Text = "Invalid operation\r\n";   
             }
             finally
             {
@@ -87,7 +86,6 @@ namespace FormApp1
                 return x * y;
             else
                 return x / y;
-
         }
     }
 }

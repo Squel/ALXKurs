@@ -8,11 +8,9 @@ public class OwnExepction: Exception
 
 	public OwnExepction(string? message): base(message)
 	{
-
 	}
 
 	public OwnExepction(string? message, Exception? innerException): base(message, innerException)
 	{
-
 	}
 }
