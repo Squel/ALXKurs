@@ -44,8 +44,7 @@ namespace CalculatorForm
         private void AppendExpression(string expressionPart)
         {
             ExpressionBuilder.Append(expressionPart);
-            ResaultTextBox.Text = ExpressionBuilder.ToString();
-            
+            ResaultTextBox.Text = ExpressionBuilder.ToString();  
         }
     }
 }
