@@ -33,6 +33,8 @@ namespace CalculatorForm
 
         private void EqualsButton_Click(object sender, EventArgs e)
         {
+            Button button = (Button)sender;
+            AppendExpression(button.Text);
             var expression = ResaultTextBox.Text;
             var result = ExpressionService.ProcessExpression(expression);
             ResaultTextBox.Text = result.ToString();

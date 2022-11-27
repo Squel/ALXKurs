@@ -46,7 +46,6 @@
             this.KeyDivineButton = new System.Windows.Forms.Button();
             this.ClearButton = new System.Windows.Forms.Button();
             this.ResultButton = new System.Windows.Forms.Button();
-            this.StringBuilderButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // ResaultTextBox
@@ -275,24 +274,13 @@
             this.ResultButton.Tag = "=";
             this.ResultButton.Text = "=";
             this.ResultButton.UseVisualStyleBackColor = false;
-            // 
-            // StringBuilderButton
-            // 
-            this.StringBuilderButton.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.StringBuilderButton.Font = new System.Drawing.Font("Segoe UI", 14.14286F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.StringBuilderButton.Location = new System.Drawing.Point(30, 608);
-            this.StringBuilderButton.Name = "StringBuilderButton";
-            this.StringBuilderButton.Size = new System.Drawing.Size(585, 100);
-            this.StringBuilderButton.TabIndex = 18;
-            this.StringBuilderButton.Text = "String Builder Demo";
-            this.StringBuilderButton.UseVisualStyleBackColor = false;
+            this.ResultButton.Click += new System.EventHandler(this.EqualsButton_Click);
             // 
             // CalculatorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 30F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(648, 720);
-            this.Controls.Add(this.StringBuilderButton);
+            this.ClientSize = new System.Drawing.Size(648, 606);
             this.Controls.Add(this.ResultButton);
             this.Controls.Add(this.ClearButton);
             this.Controls.Add(this.KeyDivineButton);
@@ -338,6 +326,5 @@
         private Button KeyDivineButton;
         private Button ClearButton;
         private Button ResultButton;
-        private Button StringBuilderButton;
     }
 }
