@@ -2,6 +2,6 @@
 {
     public interface ICalculatorService
     {
-        double ProcessExpression(string expression);
+        string ProcessExpression(string expression);
     }
 }

@@ -6,10 +6,10 @@ namespace CalculatorForm.Services
 {
     public class ExpressionService : ICalculatorService
     {
-        public double ProcessExpression(string expression)
+        public string ProcessExpression(string expression)
         {
             var result = CreateNumberSubstring(expression);
-            return result;
+            return result.ToString();
         }
 
         private double CreateNumberSubstring(string expression)
