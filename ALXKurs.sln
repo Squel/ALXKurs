@@ -32,7 +32,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculatorForm", "Calculato
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DBInteraction", "DBInteraction", "{4CB858A5-15DC-46C1-9B53-C70B9E3A1522}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ADODemoConsoleApp", "ADODemoConsoleApp\ADODemoConsoleApp.csproj", "{F54FA436-0927-4646-B9FA-C1FAF42DA51F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ADODemoConsoleApp", "ADODemoConsoleApp\ADODemoConsoleApp.csproj", "{F54FA436-0927-4646-B9FA-C1FAF42DA51F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

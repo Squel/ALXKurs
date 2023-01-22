@@ -1,4 +1,6 @@
 ﻿using System.Data.SqlClient;
+using ADODemoConsoleApp.Models;
+using ADODemoConsoleApp.Services;
 
 namespace ADODemoConsoleApp
 {
@@ -6,10 +8,12 @@ namespace ADODemoConsoleApp
     {
 
         private string _connectionString;
+        private CompanyDbRepository _companyDbRepository;
 
         public ADODemo(string connectionString)
         {
             _connectionString= connectionString;
+            _companyDbRepository = new CompanyDbRepository(connectionString);
         }
 
         public void RunSelectAllFromEmployees()
@@ -63,6 +67,10 @@ namespace ADODemoConsoleApp
                     Console.WriteLine(ex.StackTrace);
                 }
             }
+        }
+        public void InsertEmployee()
+        {
+
         }
     }
 }
