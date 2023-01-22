@@ -12,4 +12,5 @@ Console.WriteLine("Select columns");
 demo.RunSelectedDefinedColumnSet("first_name", "last_name", "email");
 Console.WriteLine("---------------------");
 Console.WriteLine("Insert to DB");
-demo.InsertEmployeeDemo();
+//demo.InsertEmployeeDemo();
+demo.ManyEmployee();

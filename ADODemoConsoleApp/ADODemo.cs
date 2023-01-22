@@ -86,5 +86,33 @@ namespace ADODemoConsoleApp
             _companyDbRepository.InsertEmployeeToDb(employee);
             RunSelectAllFromEmployees();
         }
+
+        public void ManyEmployee()
+        {
+            var employeeList = new List<Employee>();
+            var random = new Random();
+
+            string[] names = { "Michał", "Andrzej", "Tomasz", "Marta", "Barbara", "Agnieszka", "Leon", "Mirosław" };
+            string[] lastName = { "Ch", "R", "D", "S", "P", "T", "A", "Z" };
+
+            for (int i = 0; i < 100; i++)
+            {
+                employeeList.Add(new Employee
+                {
+                    id = Guid.NewGuid(),
+                    first_name = names[random.NextInt64(0, 8)],
+                    last_name = lastName[random.NextInt64(0, 8)],
+                    email = names[random.NextInt64(0, 3)] + names[random.NextInt64(0, 3)] + names[random.NextInt64(0, 3)] + random.NextInt64().ToString() + "@gmail.com",
+                    department_id = Guid.Parse("D28702B3-B1BC-4549-8021-554A5153156E")
+                });
+                Console.WriteLine("Employee created...");
+            }
+
+            foreach (var employee in employeeList)
+            {
+                _companyDbRepository.InsertEmployeeToDb(employee);
+                Console.WriteLine("Employee inserted...");
+            }
+        }
     }
 }
