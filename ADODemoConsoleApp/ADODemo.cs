@@ -1,4 +1,5 @@
-﻿using System.Data.SqlClient;
+﻿using System.ComponentModel.DataAnnotations;
+using System.Data.SqlClient;
 using ADODemoConsoleApp.Models;
 using ADODemoConsoleApp.Services;
 
@@ -66,11 +67,24 @@ namespace ADODemoConsoleApp
                     Console.WriteLine(ex.Message);
                     Console.WriteLine(ex.StackTrace);
                 }
+                connection.Close();
             }
         }
-        public void InsertEmployee()
-        {
 
+        public void InsertEmployeeDemo()
+        {
+            var employee = new Employee
+            {
+                id = Guid.NewGuid(),
+                first_name = "Emil",
+                last_name = "K",
+                email = "Emil123@gmail.com",
+                department_id = Guid.Parse("B03E90D0-459A-44E2-B970-98CFE795A122")
+            };
+            Console.WriteLine("Employee created");
+
+            _companyDbRepository.InsertEmployeeToDb(employee);
+            RunSelectAllFromEmployees();
         }
     }
 }
