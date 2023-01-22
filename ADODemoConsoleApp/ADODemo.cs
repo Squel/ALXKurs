@@ -75,11 +75,11 @@ namespace ADODemoConsoleApp
         {
             var employee = new Employee
             {
-                id = Guid.NewGuid(),
-                first_name = "Emil",
-                last_name = "K",
-                email = "Emil123@gmail.com",
-                department_id = Guid.Parse("B03E90D0-459A-44E2-B970-98CFE795A122")
+                Id = Guid.NewGuid(),
+                First_name = "Emil",
+                Last_name = "K",
+                Email = "Emil123@gmail.com",
+                Department_id = Guid.Parse("B03E90D0-459A-44E2-B970-98CFE795A122")
             };
             Console.WriteLine("Employee created");
 
@@ -99,11 +99,11 @@ namespace ADODemoConsoleApp
             {
                 employeeList.Add(new Employee
                 {
-                    id = Guid.NewGuid(),
-                    first_name = names[random.NextInt64(0, 8)],
-                    last_name = lastName[random.NextInt64(0, 8)],
-                    email = names[random.NextInt64(0, 3)] + names[random.NextInt64(0, 3)] + names[random.NextInt64(0, 3)] + random.NextInt64().ToString() + "@gmail.com",
-                    department_id = Guid.Parse("D28702B3-B1BC-4549-8021-554A5153156E")
+                    Id = Guid.NewGuid(),
+                    First_name = names[random.NextInt64(0, 8)],
+                    Last_name = lastName[random.NextInt64(0, 8)],
+                    Email = names[random.NextInt64(0, 3)] + names[random.NextInt64(0, 3)] + names[random.NextInt64(0, 3)] + random.NextInt64().ToString() + "@gmail.com",
+                    Department_id = Guid.Parse("D28702B3-B1BC-4549-8021-554A5153156E")
                 });
                 Console.WriteLine("Employee created...");
             }

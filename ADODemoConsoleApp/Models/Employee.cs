@@ -2,10 +2,10 @@
 {
     public class Employee
     {
-        public Guid id { get; set; }
-        public string first_name { get; set; }
-        public string last_name { get; set; }
-        public string email { get; set; }
-        public Guid department_id { get; set; }
+        public Guid Id { get; set; }
+        public string First_name { get; set; }
+        public string Last_name { get; set; }
+        public string Email { get; set; }
+        public Guid Department_id { get; set; }
     }
 }
